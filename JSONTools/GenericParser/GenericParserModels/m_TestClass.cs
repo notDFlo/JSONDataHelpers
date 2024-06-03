@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace JSONTools.GenericParser.GenericParserModels
+﻿namespace JSONTools.GenericParser.GenericParserModels
 {
   public class m_TestClass
   {
@@ -15,11 +9,6 @@ namespace JSONTools.GenericParser.GenericParserModels
     #endregion // Properties
 
     #region Constructors
-    public m_TestClass()
-    {
-      // empty constructor
-    }
-
     public m_TestClass(string name, string description, DateTime dateOfBirth)
     {
       this.Name = name;

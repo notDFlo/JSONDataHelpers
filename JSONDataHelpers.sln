@@ -5,6 +5,8 @@ VisualStudioVersion = 17.10.34916.146
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JSONTools", "JSONTools\JSONTools.csproj", "{49C98E60-CE37-4708-BECF-E631FD079B82}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NUnitTesting", "NUnitTesting\NUnitTesting.csproj", "{F83EC91D-D66F-428E-B1EC-238B07CB344C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{49C98E60-CE37-4708-BECF-E631FD079B82}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{49C98E60-CE37-4708-BECF-E631FD079B82}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{49C98E60-CE37-4708-BECF-E631FD079B82}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F83EC91D-D66F-428E-B1EC-238B07CB344C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F83EC91D-D66F-428E-B1EC-238B07CB344C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F83EC91D-D66F-428E-B1EC-238B07CB344C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F83EC91D-D66F-428E-B1EC-238B07CB344C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Linq;
-using System.Text;
-using System.Text.Json;
-using System.Threading.Tasks;
+﻿using System.Text.Json;
 using JSONTools.GenericParser.GenericParserModels;
 
 namespace JSONTools.GenericParser
@@ -50,30 +44,35 @@ namespace JSONTools.GenericParser
     #endregion // Constructors
 
     #region Methods
-    public void ParseJson()
+    public List<T> ParseJson()
     {
       // read and deserialize the JSON file's text
       string rawJsonData = File.ReadAllText(this._fullFilePath);
+
       // use the generic (T) to deserialize the data into your class
       this._entries = JsonSerializer.Deserialize<List<T>>(rawJsonData) ?? new List<T>();
+
+      // return the list of entries
+      return this._entries;
     }
 
     // again, this method is to demonstrate the functionality of the generic parser
     // ----------
     // the actual implementation can be done with your own classes, without using 
     // these Print methods
-    public void PrintEntries()
+    public List<T> PrintEntries()
     {
-      
+      var results = new List<T>();
       foreach (var entry in this._entries)
       {
         Console.WriteLine($"Name          : {(entry as m_TestClass).Name}");
         Console.WriteLine($"Description   : {(entry as m_TestClass).Description}");
         Console.WriteLine($"Date of Birth : {(entry as m_TestClass).DateOfBirth.ToShortDateString()}");
         Console.WriteLine("     -----");
-
+        results.Add(entry);
       }
       Console.WriteLine("---------------------------------------");
+      return results;
     }
 
     public void PrintEntries_By_ToString()
