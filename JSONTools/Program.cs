@@ -6,10 +6,10 @@
     {
       string rootPath = ".\\GenericParser";
 
-      //JsonParser_Generic<m_TestClass> parser = new JsonParser_Generic<m_TestClass>(rootPath);
-      //parser.ParseJson();
-      //parser.PrintEntries();
-      //parser.PrintEntries_By_ToString();
+      JsonParser_Generic<m_TestClass> parser = new JsonParser_Generic<m_TestClass>(rootPath);
+      parser.ParseJson();
+      parser.PrintEntries();
+      parser.PrintEntries_By_ToString();
 
       Console.WriteLine();
       Console.WriteLine("[DEBUG] Parsing Complete...");
